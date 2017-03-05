@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Deployment>
+	<Properties>
+		<Property name="driverAdobeCode">{8048A5DF-8A70-5BE1-954B-E0FDE1BD0D0D}</Property>
+	</Properties>
+	<Payloads>
+		<Payload adobeCode="{8048A5DF-8A70-5BE1-954B-E0FDE1BD0D0D}">
+			<Action>remove</Action>
+		</Payload>
+	</Payloads>
+</Deployment>
