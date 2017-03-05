@@ -54,6 +54,8 @@ public class frmMain extends javax.swing.JFrame {
         txtAlamat = new javax.swing.JTextArea();
         txtSMP = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txtTelp = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblData = new javax.swing.JTable();
@@ -117,6 +119,9 @@ public class frmMain extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("SMP");
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("No Telp");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -124,24 +129,27 @@ public class frmMain extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel9)
-                    .addComponent(txtEmail)
-                    .addComponent(jLabel8)
-                    .addComponent(txtKelas)
-                    .addComponent(jLabel7)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLaki)
-                        .addGap(29, 29, 29)
-                        .addComponent(jPerempuan))
-                    .addComponent(txtNama)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4)
-                    .addComponent(txtNIS)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
-                    .addComponent(txtSMP))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtTelp, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                    .addComponent(jLabel11)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel10)
+                        .addComponent(jLabel9)
+                        .addComponent(txtEmail)
+                        .addComponent(jLabel8)
+                        .addComponent(txtKelas)
+                        .addComponent(jLabel7)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addComponent(jLaki)
+                            .addGap(29, 29, 29)
+                            .addComponent(jPerempuan))
+                        .addComponent(txtNama)
+                        .addComponent(jLabel6)
+                        .addComponent(jLabel5)
+                        .addComponent(jLabel4)
+                        .addComponent(txtNIS)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                        .addComponent(txtSMP)))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,6 +184,10 @@ public class frmMain extends javax.swing.JFrame {
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtSMP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtTelp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -213,7 +225,7 @@ public class frmMain extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(153, 0, 0));
@@ -362,16 +374,16 @@ public class frmMain extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(35, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -424,6 +436,8 @@ public class frmMain extends javax.swing.JFrame {
         buttonGroup1.clearSelection();
         txtEmail.setText("");
         txtAlamat.setText("");
+        txtSMP.setText("");
+        txtTelp.setText("");
     }//GEN-LAST:event_bClearActionPerformed
 
     private void bEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEditActionPerformed
@@ -439,18 +453,14 @@ public class frmMain extends javax.swing.JFrame {
             }else {
                 JK = "P";
             }
-            String SQL = "UPDATE `t_siswa` SET"
-                    + "NamaSiswa='"+txtNama.getText()+"',"+ "JenisKelamin='"+JK+"',"
-                    + "Kelas='"+txtKelas.getText()+"',"+ "Email='"+txtEmail.getText()+"'"
-                    + "Alamat='"+txtAlamat.getText()+"'"
-                    + "NIS='"+txtNIS.getText()+"'";
+            String SQL = "UPDATE `t_siswa` SET `NIS`="+txtNIS.getText()+",`NamaSiswa`='"+txtNama.getText()+"',`JenisKelamin`='"+JK+"',`Kelas`='"+txtKelas.getText()+"',`Email`='"+txtEmail.getText()+"',`SMP`='"+txtSMP.getText()+"',`notlp`='"+txtTelp.getText()+"',`Alamat`='"+txtAlamat.getText()+"' WHERE `NIS`="+txtNIS.getText();
             int status = KoneksiDB.execute(SQL);
-            if (status == 1){
-                JOptionPane.showMessageDialog(this, "Data Berhasil diupdate", "Sukses", JOptionPane.INFORMATION_MESSAGE);
-                selectdata();
-            }else {
-                JOptionPane.showMessageDialog(this, "Data gagal diupdate", "Sukses", JOptionPane.WARNING_MESSAGE);
-            }
+              if (status == 1){
+                  JOptionPane.showMessageDialog(this, "Data berhasil di tambahkan", "Sukses", JOptionPane.INFORMATION_MESSAGE);
+                  selectData();
+              }else {
+                  JOptionPane.showMessageDialog(this, "Data gagal di tambahkan", "Sukses", JOptionPane.WARNING_MESSAGE);
+              }
         }
     }//GEN-LAST:event_bEditActionPerformed
 
@@ -485,6 +495,8 @@ public class frmMain extends javax.swing.JFrame {
             txtEmail.setText(tblData.getValueAt(baris, 4).toString());
             txtKelas.setText(tblData.getValueAt(baris, 3).toString());
             txtAlamat.setText(tblData.getValueAt(baris, 5).toString());
+            txtSMP.setText(tblData.getValueAt(baris,6).toString());
+            txtTelp.setText(tblData.getValueAt(baris,7).toString());
         }        // TODO add your handling code here:
     }//GEN-LAST:event_tblDataMouseClicked
 
@@ -532,6 +544,7 @@ public class frmMain extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -556,10 +569,11 @@ public class frmMain extends javax.swing.JFrame {
     private javax.swing.JTextField txtNIS;
     private javax.swing.JTextField txtNama;
     private javax.swing.JTextField txtSMP;
+    private javax.swing.JTextField txtTelp;
     // End of variables declaration//GEN-END:variables
     
     private void selectData() {
-        String kolom[] = {"NIS","NamaSiswa","JenisKelamin","Kelas","Email","Alamat"};
+        String kolom[] = {"NIS","NamaSiswa","JenisKelamin","Kelas","Email","Alamat","SMP","notlp"};
         DefaultTableModel dtm = new DefaultTableModel(null, kolom);
         String SQL = "SELECT * FROM t_siswa";
         ResultSet rs = KoneksiDB.executeQuery(SQL);
@@ -576,7 +590,9 @@ public class frmMain extends javax.swing.JFrame {
                 String Kelas = rs.getString(4);
                 String Email = rs.getString(5);
                 String Alamat = rs.getString(6);
-                String data[] = {NIS,NamaSiswa,JenisKelamin,Kelas,Email,Alamat};
+                String SMP = rs.getString(7);
+                String TELP = rs.getString(8);
+                String data[] = {NIS,NamaSiswa,JenisKelamin,Kelas,Email,Alamat,SMP,TELP};
                 dtm.addRow(data);
             }
         }catch (SQLException ex) {
